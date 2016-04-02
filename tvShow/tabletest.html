@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <style type="text/css">
+         
+        .RadForm_Sunset .sunsetStyle {
+            border-collapse: collapse;
+        }
+         
+        .RadForm_Sunset .sunsetStyle th {
+            padding: 2px 3px;
+            background: #B94D0A;
+            color: #fff;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #CABAAB;
+        }
+         
+        .RadForm_Sunset .sunsetStyle td {
+            padding: 2px 3px;
+            border-width: 1px;
+            border-style: solid;
+            border-collapse: collapse;
+        }
+         
+        .RadForm_Sunset .sunsetStyle .rfdRow td {
+            background-color: #fff;
+            border-color: #CABAAB;
+        }
+         
+        .RadForm_Sunset .sunsetStyle .rfdAltRow td {
+            background-color: #F1E9DC;
+            border-color: #CABAAB;
+        }
+         
+         
+    </style>
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <telerik:RadFormDecorator ID="RadFormDecorator1" runat="server" DecoratedControls="All"
+        Skin="Sunset" />
+        <table class="sunsetStyle" cellpadding="0" cellspacing="0">
+            <thead>
+            <tr>
+                <th>head 1</th>
+                <th>head 2</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr class="rfdRow">
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                </tr>
+                <tr class="rfdAltRow">
+                    <td>Cell 3</td>
+                    <td>Cell 4</td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
